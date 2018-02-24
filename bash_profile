@@ -10,6 +10,13 @@ alias gadd="git add ."
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gcommit="git commit -am '$1'"
 alias ccat="pygmentize -g $1"
+alias rmake="rm -R CMakeFiles/ CMakeCache.txt DisplayImage Makefile cmake_install.cmake"
+alias snippet="cd ~/.vim/snippets/"
+alias home="cd ~/"
+alias user="cd /Users/bruno/"
+alias gopencv="g++ `pkg-config --cflags --libs opencv`"
+alias octave_cli="/usr/local/Cellar/octave/4.2.1_1/bin/octave-cli"
+
 export CLICOLOR=1
 export PS1="\[\033[38;5;2m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\]::\[$(tput sgr0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]::\[$(tput sgr0)\]\[\033[38;5;57m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\]:: \[$(tput sgr0)\]\[\033[38;5;3m\]>\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 # export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
@@ -35,6 +42,12 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1       # '%'=untracked
 export GIT_PS1_SHOWUPSTREAM="verbose"     # 'u='=no difference, 'u+1'=ahead by 1 commit
 export GIT_PS1_STATESEPARATOR=''          # No space between branch and index status
 export GIT_PS1_DESCRIBE_STYLE="describe"  # detached HEAD style:
+# alias sgrep='grep --color=auto'
+export PATH="/usr/local/opt/opencv3/bin:$PATH"
+
+# added by Anaconda2 4.4.0 installer
+export PATH="/Users/bruno/anaconda/bin:$PATH"
+
 #  contains      relative to newer annotated tag (v1.6.3.2~35)
 #  branch        relative to newer tag or branch (master~4)
 #  describe      relative to older annotated tag (v1.6.3.1-13-gdd42c2f)
@@ -77,5 +90,4 @@ export GIT_PS1_DESCRIBE_STYLE="describe"  # detached HEAD style:
 # export PS1="\[\033[38;5;2m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\]::\[$(tput sgr0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]::\[$(tput sgr0)\]\[\033[38;5;57m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\]:: \[$(tput sgr0)\]\[\033[38;5;3m\]>\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 # export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
-# alias sgrep='grep --color=auto'
-export PATH="/usr/local/opt/opencv3/bin:$PATH"
+

@@ -75,4 +75,3 @@ augroup END
 Plugin 'lervag/vimtex'
 " Plugin para auto fechar parenteses 
 Plugin 'townk/vim-autoclose'
-
